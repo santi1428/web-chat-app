@@ -1,1 +1,1 @@
-rm -rf node_modules/bcrypt && npm install && npx knex migrate:latest 
+npx knex migrate:latest 
