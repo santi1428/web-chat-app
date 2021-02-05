@@ -1,0 +1,10 @@
+img{
+    height: 256px;
+    width: 256px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.progress-bar{
+    width: 25%;
+}

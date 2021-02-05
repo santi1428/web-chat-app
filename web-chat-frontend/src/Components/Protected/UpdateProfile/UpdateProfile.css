@@ -1,0 +1,11 @@
+#userProfilePhoto{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#update-profile-button, #delete-profile-account{
+    font-size: 0.9rem;
+}

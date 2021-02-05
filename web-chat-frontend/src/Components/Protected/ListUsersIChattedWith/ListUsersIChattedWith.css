@@ -1,0 +1,9 @@
+.users-i-chatted-with{
+    height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#filter-users{
+    font-size: 0.9rem;
+}

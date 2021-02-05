@@ -1,0 +1,27 @@
+.user-profile-photo{
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.user-i-chatted-with{
+    border-bottom: 1px dotted #343a40;
+    cursor: pointer;
+    border-right: 1px dotted #343a40;
+}
+
+.user-i-chatted-with:hover{
+    background: #343a40;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.user-name{
+    font-weight: bold;
+}
+
+.user-email{
+    font-size: 0.9rem;
+}

@@ -1,0 +1,44 @@
+#profilePhoto{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* #navbar ul{
+    margin: 0;
+    display: flex;
+    padding: 15px 0px;
+    flex-direction: row-reverse;
+    margin-right: 6vw;
+}
+
+#navbar{
+    background: #343A40;
+}
+
+.navbar-item {
+    list-style: none;
+    margin-right: 5vw;
+}
+
+.navbar-item-link{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    transition: ease-out 0.2s;
+}
+
+.navbar-item-link:hover{
+    background: #484d53;
+    transition: ease-in 0.2s;
+}
+
+Link{
+    text-decoration: none;
+}
+
+i{
+    margin-right: 7px;
+} */
+

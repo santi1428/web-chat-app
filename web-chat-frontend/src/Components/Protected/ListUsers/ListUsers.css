@@ -1,0 +1,40 @@
+#usersList{
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+.user{
+    border-right: 1px solid #c2c3c5;
+    border-left: 1px solid #c2c3c5;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid #c2c3c5;
+    background: #fff;
+    color: #000;
+}
+
+.user p{
+    margin: 0;
+}
+
+.user:hover{
+    background: #343A40;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.name{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.email{
+    font-size: 0.9rem;
+}

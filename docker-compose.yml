@@ -1,0 +1,61 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: WebChat
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123456
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: santiago@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: 123456
+      PGADMIN_LISTEN_PORT: 80
+    ports:
+      - "8080:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    links:
+      - "db:pgsql-server"
+  app_backend:
+    container_name: app_backend
+    depends_on:
+      - db
+    links:
+      - db
+    build: ./web-chat-backend
+    volumes:
+      - ./web-chat-backend:/app
+    networks:
+      - app-network
+    ports:
+      - "5000:5000"
+  app_frontend:
+    container_name: app_frontend
+    depends_on:
+      - app_backend
+    links:
+      - app_backend
+    build: ./web-chat-frontend
+    volumes:
+      - ./web-chat-frontend:/app
+    networks:
+      - app-network
+    ports:
+      - "80:80"
+volumes:
+  db_data:
+    driver: local
+  pgadmin_data:
+    driver: local
+networks:
+  app-network:
+    driver: bridge

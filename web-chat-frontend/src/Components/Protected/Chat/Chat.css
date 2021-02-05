@@ -1,0 +1,18 @@
+#messages{
+    height: 55vh;
+    border: 1px solid #c2c3c5;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+.card-body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+} 
+
+#chatUserProfilePhoto{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    object-fit: contain;
+}

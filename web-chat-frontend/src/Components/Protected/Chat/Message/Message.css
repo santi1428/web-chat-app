@@ -1,0 +1,18 @@
+small{
+    font-size: 0.7rem;
+}
+
+.message{
+    /* background: #343a40; */
+    /* color: #fff; */
+    border-radius: 10px !important;
+    border: 1px solid #343a40;
+}
+
+.message-text{
+    word-break: break-all;
+}
+
+/* #message{
+    word-break: break-all;
+} */
