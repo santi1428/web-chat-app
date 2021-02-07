@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const socket = require('./routes/chat');
 
-const whitelist = ['http://localhost'];
+const whitelist = [`${process.env.HOST}`];
 var corsOptions = {
   origin: function (origin, callback) {
     console.log(origin);
@@ -34,5 +34,7 @@ const PORT =  process.env.PORT || 5000;
 const server = app.listen(PORT, () => console.log("Server running in port " + PORT));
 
 socket(server);
+
+console.log(process.env.HOST);
 
 // app.use(cors(corsOptions));
