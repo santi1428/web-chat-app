@@ -12,11 +12,7 @@ module.exports = {
     },
     migrations: {
       tableName: 'knex_migrations'
-    },
-    pool: {
-      min: 2,
-      max: 20
-    },
+    }
   },
 
   staging: {

@@ -45,6 +45,7 @@ function SignUp(){
 
     return (
         <div className="container">
+            <title>Sign Up</title>
             <div className="row justify-content-center mt-4">
                 <div className="col-md-4">
                     <div className="card">

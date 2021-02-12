@@ -48,6 +48,7 @@ const UpdatePassword = props => {
     return (
 
         <div className="container">
+            <title>Change Password</title>
             <div className="row mt-5 justify-content-center">
                 <div className="col-md-4">
                     <div className="card">

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "WebChat",
+  "name": "WebChat App",
   "icons": [
     {
       "src": "favicon.ico",

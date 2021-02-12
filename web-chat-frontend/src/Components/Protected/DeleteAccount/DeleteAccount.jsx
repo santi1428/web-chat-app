@@ -42,6 +42,7 @@ const DeleteAccount = props => {
     
     return (
         <div className="container">
+            <title>Delete Account</title>
             <div className="row mt-5 justify-content-center">
                 <div className="col-md-5">
                     <div className="card">
