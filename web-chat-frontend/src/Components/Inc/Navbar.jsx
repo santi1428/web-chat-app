@@ -52,7 +52,7 @@ function Navbar(){
               <li className="nav-item active">
                 <Link to="/login" className="nav-item nav-link py-3 mr-0 mr-md-3 mr-lg-5 px-4 active">
                   <i className="fas fa-sign-in-alt mr-2"></i>
-                  Log In
+                  Sign In
                 </Link>
               </li>
             }

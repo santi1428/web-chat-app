@@ -42,6 +42,7 @@ const UploadUserProfilePhoto = props => {
 
     return (    
         <div className="container">
+            <title>Upload Profile Photo</title>
             <div className="row justify-content-center mt-4">
                 <div className="col-md-6 card">
                     <div className="card-header text-center">

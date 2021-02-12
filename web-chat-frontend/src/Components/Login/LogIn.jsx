@@ -42,6 +42,7 @@ function LogIn(){
 
     return (
         <div className="container">
+            <title>Sign In</title>
             <div className="row justify-content-center mt-5">
                 <div className="col-md-4">
                     {loginError && <div className="alert alert-danger text-center" role="alert">

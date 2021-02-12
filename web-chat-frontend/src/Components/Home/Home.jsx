@@ -16,6 +16,7 @@ const Home = props => {
  
     return (
         <div className="container">
+            <title>Home</title>
             <div className="row">
                 <div className="col">
                 <div className="jumbotron">

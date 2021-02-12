@@ -24,6 +24,7 @@ const WebChat = () => {
 
     return (
         <div className="row mt-3">
+            <title>Chat</title>
             <ListUsersIChattedWith 
             user={user} 
             socket={socket} 

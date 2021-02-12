@@ -51,6 +51,7 @@ const UpdateProfile = props => {
 
     return (
         <React.Fragment>
+            <title>Profile</title>
             <div className="container">
                 <div className="row justify-content-center mt-3">
                     <form className="col-md-5 card card-body" noValidate onSubmit={handleSubmit}>
