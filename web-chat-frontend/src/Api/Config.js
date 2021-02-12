@@ -1,4 +1,4 @@
-const URL = 'http://192.168.1.8:5000';
+const URL = 'http://191.235.98.11:5000';
 
 export {
     URL
