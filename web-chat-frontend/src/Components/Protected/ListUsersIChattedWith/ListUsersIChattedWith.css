@@ -1,5 +1,5 @@
 .users-i-chatted-with{
-    height: 85vh;
+    height: auto;
     overflow-y: scroll;
     overflow-x: hidden;
 }
