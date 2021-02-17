@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const socket = require('./routes/chat');
 
-const whitelist = [`${process.env.HOST}`];
+const whitelist = [`http://${process.env.HOST}`, `http://www.${process.env.HOST}`];
 var corsOptions = {
   origin: function (origin, callback) {
     console.log(origin);
@@ -35,6 +35,6 @@ const server = app.listen(PORT, () => console.log("Server running in port " + PO
 
 socket(server);
 
-console.log(process.env.HOST);
+console.log(`http://${process.env.HOST}`, `http://www.${process.env.HOST}`);
 
 // app.use(cors(corsOptions));

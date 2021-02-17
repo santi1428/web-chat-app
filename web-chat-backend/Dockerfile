@@ -20,3 +20,6 @@ CMD npm run dev
 
 EXPOSE 5000
 
+
+
+
