@@ -1,7 +1,7 @@
 const { saveMessage } = require('./api/utils/message');
 const options={
     cors:true,
-    origins:[`${process.env.HOST}`],
+    origins:[`http://${process.env.HOST}`, `http://www.${process.env.HOST}`],
    }
 
 const socket = server => {
