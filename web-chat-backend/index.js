@@ -15,14 +15,14 @@ var corsOptions = {
   }
 }
 
-// app.use(cors());
+app.use(cors());
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use('/api/users', require('./routes/api/user'));
 app.use('/api/users', require('./routes/api/auth/auth'));
